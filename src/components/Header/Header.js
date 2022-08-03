@@ -7,7 +7,7 @@ const Header = (props) => {
   };
   return (
     <header className={classes.header}>
-      <div className="header-logo">
+      <div className={classes.headerLogo}>
         <h2>ReactMeals</h2>
       </div>
       <div className="header-container"></div>

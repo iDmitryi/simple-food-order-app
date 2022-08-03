@@ -1,20 +1,38 @@
+import { useRef } from "react";
+
+import Item from "./Item";
+
 import classes from "./ListItem.module.css";
 
 const ListItem = (props) => {
+  const inputRef = useRef();
+
+  const onChangeInputHandler = (e) => {
+    console.log(inputRef.current.value);
+  };
+
+  const onClickEventHandler = () => {
+    alert(inputRef.current.value);
+
+    inputRef.current.value = "1";
+  };
+
   return (
     <li className={classes.listItem}>
       <div className={classes.listItemContent}>
-        <div className={classes.listItemInfo}>
-          <h4>Sushi</h4>
-          <p>Finest fish and veggies</p>
-          <code>$22.99</code>
-        </div>
+        <Item />
         <div className={classes.listItemShop}>
           <div className={classes.listItemShopLabel}>
             <label>Amount</label>
-            <input type="number" value="1" />
+            <input
+              ref={inputRef}
+              type="number"
+              min="1"
+              defaultValue="1"
+              onChange={onChangeInputHandler}
+            />
           </div>
-          <button onClick={() => alert("implement ADD Item logic")}>Add</button>
+          <button onClick={onClickEventHandler}>Add</button>
         </div>
       </div>
       <hr></hr>
