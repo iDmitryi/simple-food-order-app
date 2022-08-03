@@ -1,0 +1,16 @@
+.main {
+  min-height: 50vh;
+  background-color: #006666;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.mainList {
+  padding-inline-start: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 0.1rem;
+  border-radius: 1rem;
+  list-style-type: none;
+}
