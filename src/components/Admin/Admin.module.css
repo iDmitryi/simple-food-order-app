@@ -1,0 +1,17 @@
+.admin {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  padding-left: 25%;
+  font-weight: 900;
+  font-size: 30px;
+  padding-top: 3rem;
+}
+
+.price input {
+  background-color: azure;
+}

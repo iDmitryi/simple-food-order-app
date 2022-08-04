@@ -6,21 +6,60 @@
   padding-right: 4rem;
 }
 
-.headerLogo {
+.headerLogo button {
+  height: 100%;
+  text-align: center;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.headerLogo h2 {
+  color: azure;
+  margin: 0;
+}
+
+.headerLogo button:hover {
+  box-shadow: 0 3px 12px rgba(255, 255, 255, 0.414),
+    0 3px 12px rgba(255, 255, 255, 0.514);
+}
+
+.headerContainer {
+  width: 58%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.headerContainer button {
+  border: 0;
+  background: none;
+  color: rgb(211, 216, 216);
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.headerContainer button:hover {
   color: azure;
 }
 
 .headerCart {
-  width: 17%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
+  background-color: azure;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
   border-radius: 1rem;
+  border: 0;
+}
+
+.headerCart p {
+  margin: 0;
 }
 
 .headerCart:hover {
@@ -37,8 +76,10 @@
 }
 
 .headerCartCount {
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 1rem;
   background-color: rgb(6, 160, 160);
   color: #ffffff;
+  width: 2rem;
 }
