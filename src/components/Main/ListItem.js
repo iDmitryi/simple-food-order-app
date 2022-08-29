@@ -11,12 +11,17 @@ const ListItem = (props) => {
 
   const onChangeInputHandler = (e) => {
     console.log(inputRef.current.value);
+
+    foodCtx.setAmount(parseInt(inputRef.current.value));
   };
 
   const onAddHandler = () => {
-    foodCtx.setAmount(
-      parseInt(foodCtx.amount) + parseInt(inputRef.current.value)
+    foodCtx.setTotalAmount(
+      parseInt(foodCtx.totalAmount) + parseInt(inputRef.current.value)
     );
+
+    foodCtx.setAmount(parseInt(inputRef.current.value));
+
     const foodArray = [];
     foodArray.unshift(foodCtx);
     console.log({ foodArray });

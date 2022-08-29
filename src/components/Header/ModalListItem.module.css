@@ -1,0 +1,9 @@
+.listItemContent {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.listItemAmount {
+  font-size: 18px;
+}

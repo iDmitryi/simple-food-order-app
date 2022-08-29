@@ -7,6 +7,7 @@ export const FoodProvider = (props) => {
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState(0);
+  const [totalAmount, setTotalAmount] = useState(0);
   const [isAdmin, setIsAdmin] = useState(false);
 
   return (
@@ -20,6 +21,8 @@ export const FoodProvider = (props) => {
         setDescription,
         amount,
         setAmount,
+        totalAmount,
+        setTotalAmount,
         isAdmin,
         setIsAdmin,
       }}
